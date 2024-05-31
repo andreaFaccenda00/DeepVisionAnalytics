@@ -36,10 +36,18 @@ import supervision
 print(supervision.__version__)
 ```
 If no errors occur and the version number is displayed, the installation was successful.
+Then to install the necessary package, please follow these steps:
 
-```bash
-conda install -c conda-forge supervision
-```
+1. **Install Miniconda**:
+   Download and install Miniconda from the official [Miniconda website](https://docs.conda.io/en/latest/miniconda.html).
+
+2. **Add Conda to Your Environment Variables**:
+   Ensure that Conda is added to your environment variables during the installation process.
+
+3. **Install the Supervision Package**:
+   Once Miniconda is installed and configured, open your terminal (or Anaconda Prompt on Windows) and run the following command:
+   ```sh
+   conda install -c conda-forge supervision
 
 ```bash
 # clone repository and navigate to root directory
