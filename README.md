@@ -122,10 +122,7 @@ python main.py
 ```
 #### video analysis
 
-https://github.com/andreaFaccenda00/DeepVisionAnalytics/assets/171338421/c4428794-cdce-4e85-8634-9df1fc0a59d2
-
-
-Clicca sull'immagine per guardare il video.
+![pedestrian_analytics (1)](https://github.com/andreaFaccenda00/DeepVisionAnalytics/assets/171338421/6c4722a1-fd52-4e4e-a3f7-78f0a5989253)
 
 
 
