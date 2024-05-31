@@ -22,99 +22,60 @@ The Computer Vision and Deep Learning project "Wait Time Optimization and Analys
 
 
 Supervision is a powerful library used in the "Wait Time Optimization and Analysis of Interactions in Public Areas" project to enhance the capabilities of computer vision and deep learning applications. This library provides a set of tools and utilities designed to simplify the process of training, evaluating, and deploying deep learning models. Its features include data augmentation, model evaluation metrics, and support for various neural network architectures, making it a versatile choice for developing advanced computer vision solutions.
-### 💻 install
+## 💻 install
 
-Pip install the supervision package in a
-[**Python>=3.8**](https://www.python.org/) environment.
+####  1. Install the Supervision Package via Pip
+
+To install the supervision package in a [**Python>=3.8**](https://www.python.org/) environment, use the following command:
 ```bash
 pip install supervision
 ```
-
-Verify installation:
+#### 2. Verify Installation
+To verify that the installation was successful, run the following commands:
 ```bash
 import supervision
 print(supervision.__version__)
 ```
+#### 3. Install Miniconda
+Download and install Miniconda from the official Miniconda website. [Miniconda website](https://docs.conda.io/en/latest/miniconda.html).
+
+#### 4. Add Conda to Your Environment Variables
+Ensure that Conda is added to your environment variables during the installation process.
+
+#### 5. Install the Supervision Package via Conda
+Once Miniconda is installed and configured, open your terminal (or Anaconda Prompt on Windows) and run the following command:
 If no errors occur and the version number is displayed, the installation was successful.
 Then to install the necessary package, please follow these steps:
-
-1. **Install Miniconda**:
-   Download and install Miniconda from the official [Miniconda website](https://docs.conda.io/en/latest/miniconda.html).
-
-2. **Add Conda to Your Environment Variables**:
-   Ensure that Conda is added to your environment variables during the installation process.
-
-3. **Install the Supervision Package**:
-   Once Miniconda is installed and configured, open your terminal (or Anaconda Prompt on Windows) and run the following command:
-   ```sh
-   conda install -c conda-forge supervision
-
 ```bash
-# clone repository and navigate to root directory
+   conda install -c conda-forge supervision
+```
+#### 6. Clone the Repository and Set Up the Python Environment
+Clone the repository and navigate to the root directory:
+```bash
 git clone https://github.com/andreaFaccenda00/DeepVisionAnalytics.git
-
-# setup python environment and activate it
+```
+Set up the Python environment and activate it:
+```bash
 python3 -m venv venv
-source venv/bin/activate
+source venv\Scripts\activate
 pip install --upgrade pip
-
-# headless install
+```
+Perform a headless install:
+```bash
 pip install -e "."
-
-# desktop install
+```
+For desktop installation, use:
+```bash
 pip install -e ".[desktop]"
 ```
 
--install required dependencies
-
-  ```bash
+#### 7. Install Required Dependencies
+Install the required dependencies listed in requirements.txt:
+```bash
   pip install -r requirements.txt
-  ```
+```
 
 ## 🛠 scripts
-
-### `download_from_youtube`
-
-This script allows you to download a video from YouTube.
-
-- `--url`: The full URL of the YouTube video you wish to download.
-- `--output_path` (optional): Specifies the directory where the video will be saved.
-- `--file_name` (optional): Sets the name of the saved video file.
-
-```bash
-python scripts/download_from_youtube.py \
---url "https://www.youtube.com/watch?v=-8zyEwAa50Q" \
---output_path "data/checkout" \
---file_name "video.mp4"
-```
-
-```bash
-python scripts/download_from_youtube.py \
---url "https://www.youtube.com/watch?v=MNn9qKG2UFI" \
---output_path "data/traffic" \
---file_name "video.mp4"
-```
-
-### `stream_from_file`
-
-This script allows you to stream video files from a directory. It's an awesome way to
-mock a live video stream for local testing. Video will be streamed in a loop under
-`rtsp://localhost:8554/live0.stream` URL. This script requires docker to be installed.
-
-- `--video_directory`: Directory containing video files to stream.
-- `--number_of_streams`: Number of video files to stream.
-
-```bash
-python scripts/stream_from_file.py \
---video_directory "data/checkout" \
---number_of_streams 1
-```
-
-```bash
-python scripts/stream_from_file.py \
---video_directory "data/traffic" \
---number_of_streams 1
-```
 
 ### `draw_zones`
 
@@ -134,14 +95,8 @@ be saved as a JSON file.
 
 ```bash
 python scripts/draw_zones.py \
---source_path "data/checkout/video.mp4" \
---zone_configuration_path "data/checkout/config.json"
-```
-
-```bash
-python scripts/draw_zones.py \
---source_path "data/traffic/video.mp4" \
---zone_configuration_path "data/traffic/config.json"
+--source_path "data/people.mp4" \
+--zone_configuration_path "data/config.json"
 ```
 
 https://github.com/roboflow/supervision/assets/26109316/9d514c9e-2a61-418b-ae49-6ac1ad6ae5ac
