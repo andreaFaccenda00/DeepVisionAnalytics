@@ -27,7 +27,7 @@ def main(
 ) -> None:
     
     
-    output_video_path = "data/video_analytics.mp4"
+    output_video_path = "data/analysis/video_analytics.mp4"
     model = YOLO(weights)
     tracker = sv.ByteTrack(minimum_matching_threshold=0.5)
     video_info = sv.VideoInfo.from_video_path(video_path=source_video_path)
