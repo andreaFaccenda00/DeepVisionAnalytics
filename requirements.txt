@@ -3,10 +3,3 @@ supervision>=0.20.0
 ultralytics
 inference==0.9.17
 pytube
-=======
-opencv-python
-supervision>=0.20.0
-ultralytics
-inference==0.9.17
-pytube
->>>>>>> 44037322d8a8d0770aca5ea2962524b6106f691b
