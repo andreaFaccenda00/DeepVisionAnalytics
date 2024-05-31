@@ -115,7 +115,7 @@ Script to run object detection on a video file using the Ultralytics YOLOv8 mode
   - `--confidence_threshold`: Confidence level for detections (`0` to `1`). Default is `0.3`.
   - `--iou_threshold`: IOU threshold for non-max suppression. Default is `0.7`.
 
-####Running the Code
+#### Running the Code
 To run this code, ensure you have all the required libraries installed and the correct file paths set for your video, configuration, and model weights. Execute the script as follows:
 ```bash
 python main.py
