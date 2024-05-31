@@ -112,7 +112,7 @@ https://github.com/roboflow/supervision/assets/26109316/9d514c9e-2a61-418b-ae49-
 
 ### `main`
 
-Script to run object detection on a video file using the Ultralytics YOLOv8 model.
+Script to run object detection on a video file using the Ultralytics YOLOv8 model.Key parameters include:
 
   - `--zone_configuration_path`: Path to the zone configuration JSON file.
   - `--source_video_path`: Path to the source video file.
