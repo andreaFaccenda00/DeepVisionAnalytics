@@ -101,8 +101,8 @@ be saved as a JSON file.
 - `s` - save zone configuration to a JSON file.
 
 ```bash
-python scripts/draw_zones.py \
---source_path "data/people.mp4" \
+python scripts/draw_zones.py 
+--source_path "data/people.mp4" 
 --zone_configuration_path "data/config.json"
 ```
 
