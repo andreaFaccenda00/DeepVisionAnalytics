@@ -2,6 +2,13 @@
 ## Introduction 
 The Computer Vision and Deep Learning project "Wait Time Optimization and Analysis of Interactions in Public Areas," part of the CTE SQUARE Pesaro, tackles these challenges using advanced computer vision (CV) and Deep Learning (DL) techniques. The goal is to monitor and analyze the flow of people to reduce waiting times and better understand people's behaviors and attention. The project focuses on three main aspects: wait time analysis, optimization of DL models for edge devices, and practical implementation. By installing webcams in Piazza del Popolo in Pesaro and employing YOLOv8 (You Only Look Once) neural networks, the project aims to monitor the time people spend in specific areas to identify critical points and optimize the efficiency of public spaces.
 
+## Project Overview
+
+This project focuses on three main objectives:
+1. **Wait Time Analysis**: Monitoring the duration people spend in specific areas to identify bottlenecks.
+2. **Model Optimization**: Enhancing DL models for deployment on edge devices.
+3. **Practical Implementation**: Installing webcams and deploying models in real-world scenarios.
+
 ## Supervision
 
 <div align="center">
