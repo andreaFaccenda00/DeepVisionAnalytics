@@ -1,7 +1,8 @@
-<<<<<<< HEAD
-# time in zone
+# DeepVisionAnalytics
 
-[![YouTube](https://badges.aleen42.com/src/youtube.svg)](https://www.youtube.com/watch?v=hAWpsIuem10)
+Il progetto di Computer Vision e Deep Learning "Wait time optimization and analysis of interactions in public areas", parte del CTE SQUARE Pesaro, affronta queste sfide utilizzando tecniche avanzate di visione artificiale (CV) e Deep Learning (DL). L'obiettivo è monitorare e analizzare i flussi di persone per ridurre i tempi di attesa e comprendere meglio i comportamenti e l'attenzione delle persone.
+Il progetto si concentra su tre aspetti principali: l'analisi dei tempi di attesa, l'ottimizzazione dei modelli DL per dispositivi edge e l'implementazione pratica. 
+Attraverso l'installazione di webcam nella Piazza del Popolo di Pesaro e l'impiego delle reti neurali YOLOv8 (You Only Look Once), il progetto mira a monitorare il tempo trascorso dalle persone in specifiche aree al fine di identificare punti critici e ottimizzare l'efficienza degli spazi pubblici.
 
 ## 👋 hello
 
