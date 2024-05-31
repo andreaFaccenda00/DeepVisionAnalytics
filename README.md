@@ -121,7 +121,10 @@ To run this code, ensure you have all the required libraries installed and the c
 python main.py
 ```
 #### video analysis
-analysis/pedestrian_analytics.mp4
+
+https://github.com/andreaFaccenda00/DeepVisionAnalytics/assets/171338421/c4428794-cdce-4e85-8634-9df1fc0a59d2
+
+
 Clicca sull'immagine per guardare il video.
 
 
