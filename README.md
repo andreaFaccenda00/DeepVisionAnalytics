@@ -121,9 +121,7 @@ To run this code, ensure you have all the required libraries installed and the c
 python main.py
 ```
 #### video analysis
-
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](analysis/pedestrian_analytics.mp4)
-
+analysis/pedestrian_analytics.mp4
 Clicca sull'immagine per guardare il video.
 
 
