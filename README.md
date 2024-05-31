@@ -1,15 +1,44 @@
 # DeepVisionAnalytics
+## Introduction 
+The Computer Vision and Deep Learning project "Wait Time Optimization and Analysis of Interactions in Public Areas," part of the CTE SQUARE Pesaro, tackles these challenges using advanced computer vision (CV) and Deep Learning (DL) techniques. The goal is to monitor and analyze the flow of people to reduce waiting times and better understand people's behaviors and attention. The project focuses on three main aspects: wait time analysis, optimization of DL models for edge devices, and practical implementation. By installing webcams in Piazza del Popolo in Pesaro and employing YOLOv8 (You Only Look Once) neural networks, the project aims to monitor the time people spend in specific areas to identify critical points and optimize the efficiency of public spaces.
 
-Il progetto di Computer Vision e Deep Learning "Wait time optimization and analysis of interactions in public areas", parte del CTE SQUARE Pesaro, affronta queste sfide utilizzando tecniche avanzate di visione artificiale (CV) e Deep Learning (DL). L'obiettivo è monitorare e analizzare i flussi di persone per ridurre i tempi di attesa e comprendere meglio i comportamenti e l'attenzione delle persone.
-Il progetto si concentra su tre aspetti principali: l'analisi dei tempi di attesa, l'ottimizzazione dei modelli DL per dispositivi edge e l'implementazione pratica. 
-Attraverso l'installazione di webcam nella Piazza del Popolo di Pesaro e l'impiego delle reti neurali YOLOv8 (You Only Look Once), il progetto mira a monitorare il tempo trascorso dalle persone in specifiche aree al fine di identificare punti critici e ottimizzare l'efficienza degli spazi pubblici.
+## Supervision
 
-## 👋 hello
+<div align="center">
+  <p>
+    <a align="center" href="" target="https://supervision.roboflow.com">
+      <img
+        width="100%"
+        src="https://media.roboflow.com/open-source/supervision/rf-supervision-banner.png?updatedAt=1678995927529"
+      >
+    </a>
+  </p>
 
-Practical demonstration on leveraging computer vision for analyzing wait times and
-monitoring the duration that objects or individuals spend in predefined areas of video
-frames. This example project, perfect for retail analytics or traffic management
-applications.
+  <br>
+
+
+  <br>
+</div>
+
+
+Supervision is a powerful library used in the "Wait Time Optimization and Analysis of Interactions in Public Areas" project to enhance the capabilities of computer vision and deep learning applications. This library provides a set of tools and utilities designed to simplify the process of training, evaluating, and deploying deep learning models. Its features include data augmentation, model evaluation metrics, and support for various neural network architectures, making it a versatile choice for developing advanced computer vision solutions.
+### 💻 install
+
+-Install Supervision Library:
+```bash
+pip install supervision
+```
+
+-Verify Installation:
+```bash
+import supervision
+print(supervision.__version__)
+```
+If no errors occur and the version number is displayed, the installation was successful.
+
+By following these steps, you can easily install and start using the Supervision library to enhance your computer vision and deep learning projects.
+
+
 
 https://github.com/roboflow/supervision/assets/26109316/d051cc8a-dd15-41d4-aa36-d38b86334c39
 
