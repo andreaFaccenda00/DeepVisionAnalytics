@@ -120,6 +120,12 @@ To run this code, ensure you have all the required libraries installed and the c
 ```bash
 python main.py
 ```
-Ensure you have the required JSON configuration file for zones and the video file in the specified directories. Adjust the file paths and other configurations as necessary.
+#### video analysis
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://github.com/USERNAME/REPOSITORY/blob/main/videos/pedestrian_analytics.mp4)
+
+Clicca sull'immagine per guardare il video.
+
+
 
 
