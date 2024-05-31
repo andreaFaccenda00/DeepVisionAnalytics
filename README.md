@@ -109,7 +109,7 @@ Script to run object detection on a video file using the Ultralytics YOLOv8 mode
 
   - `--zone_configuration_path`: Path to the zone configuration JSON file.
   - `--source_video_path`: Path to the source video file.
-  - `--weights`: Path to the model weights file. Default is `'yolov8s.pt'`.
+  - `--weights`: Path to the model weights file. Default is `'yolov8s_pedestrian.pt'`.
   - `--device`: Computation device (`'cpu'`, `'mps'` or `'cuda'`). Default is `'cpu'`.
   - `--classes`: List of class IDs to track. If empty, all classes are tracked.
   - `--confidence_threshold`: Confidence level for detections (`0` to `1`). Default is `0.3`.
