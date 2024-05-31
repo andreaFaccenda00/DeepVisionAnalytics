@@ -122,7 +122,7 @@ python main.py
 ```
 #### video analysis
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://github.com/USERNAME/REPOSITORY/blob/main/videos/pedestrian_analytics.mp4)
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](analysis/pedestrian_analytics.mp4)
 
 Clicca sull'immagine per guardare il video.
 
