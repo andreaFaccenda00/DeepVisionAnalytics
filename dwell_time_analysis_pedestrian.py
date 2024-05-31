@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import argparse
 from typing import List
 
@@ -26,6 +25,9 @@ def main(
     iou: float,
     classes: List[int],
 ) -> None:
+    
+    
+    output_video_path = "data/video_analytics.mp4"
     model = YOLO(weights)
     tracker = sv.ByteTrack(minimum_matching_threshold=0.5)
     video_info = sv.VideoInfo.from_video_path(video_path=source_video_path)
@@ -40,6 +42,8 @@ def main(
         for polygon in polygons
     ]
     timers = [FPSBasedTimer(video_info.fps) for _ in zones]
+    fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+    out = cv2.VideoWriter(output_video_path, fourcc, video_info.fps, (video_info.width, video_info.height))
 
     for frame in frames_generator:
         results = model(frame, verbose=False, device=device, conf=confidence)[0]
@@ -74,10 +78,13 @@ def main(
                 labels=labels,
                 custom_color_lookup=custom_color_lookup,
             )
+        
+        out.write(annotated_frame)
 
         cv2.imshow("Processed Video", annotated_frame)
         if cv2.waitKey(1) & 0xFF == ord("q"):
             break
+    out.release()
     cv2.destroyAllWindows()
 
 
