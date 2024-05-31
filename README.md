@@ -24,41 +24,40 @@ The Computer Vision and Deep Learning project "Wait Time Optimization and Analys
 Supervision is a powerful library used in the "Wait Time Optimization and Analysis of Interactions in Public Areas" project to enhance the capabilities of computer vision and deep learning applications. This library provides a set of tools and utilities designed to simplify the process of training, evaluating, and deploying deep learning models. Its features include data augmentation, model evaluation metrics, and support for various neural network architectures, making it a versatile choice for developing advanced computer vision solutions.
 ### 💻 install
 
--Install Supervision Library:
+Pip install the supervision package in a
+[**Python>=3.8**](https://www.python.org/) environment.
 ```bash
 pip install supervision
 ```
 
--Verify Installation:
+Verify installation:
 ```bash
 import supervision
 print(supervision.__version__)
 ```
 If no errors occur and the version number is displayed, the installation was successful.
 
-By following these steps, you can easily install and start using the Supervision library to enhance your computer vision and deep learning projects.
+```bash
+conda install -c conda-forge supervision
+```
 
+```bash
+# clone repository and navigate to root directory
+git clone https://github.com/andreaFaccenda00/DeepVisionAnalytics.git
 
+# setup python environment and activate it
+python3 -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
 
-https://github.com/roboflow/supervision/assets/26109316/d051cc8a-dd15-41d4-aa36-d38b86334c39
+# headless install
+pip install -e "."
 
-## 💻 install
+# desktop install
+pip install -e ".[desktop]"
+```
 
-- clone repository and navigate to example directory
-
-  ```bash
-  git clone https://github.com/roboflow/supervision.git
-  cd supervision/examples/time_in_zone
-  ```
-
-- setup python environment and activate it [optional]
-
-  ```bash
-  python3 -m venv venv
-  source venv/bin/activate
-  ```
-
-- install required dependencies
+-install required dependencies
 
   ```bash
   pip install -r requirements.txt
