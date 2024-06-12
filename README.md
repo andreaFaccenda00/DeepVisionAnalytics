@@ -54,7 +54,7 @@ Once Miniconda is installed and configured, open your terminal (or Anaconda Prom
 If no errors occur and the version number is displayed, the installation was successful.
 Then to install the necessary package, please follow these steps:
 ```bash
-   conda install -c conda-forge supervision
+conda install -c conda-forge supervision
 ```
 #### 6. Clone the Repository and Set Up the Python Environment
 Clone the repository and navigate to the root directory:
@@ -79,7 +79,7 @@ pip install -e ".[desktop]"
 #### 7. Install Required Dependencies
 Install the required dependencies listed in requirements.txt:
 ```bash
-  pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ## 🛠 scripts
