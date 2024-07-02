@@ -168,13 +168,13 @@ YOLOv8s was chosen for its balance of rapid inference (2.4ms), high precision (0
 The following images demonstrate the performance and evaluation metrics of the YOLOv8s model:
 
 - **Confusion Matrix**:
-  ![confusion_matrix](https://github.com/andreaFaccenda00/DeepVisionAnalytics/assets/171338421/5918e13d-4d1f-4c21-bb85-dd2a99a889f0)
+  <img src="https://github.com/andreaFaccenda00/DeepVisionAnalytics/assets/171338421/5918e13d-4d1f-4c21-bb85-dd2a99a889f0" width="400" height="400">
 
 - **F1-Confidence Curve**:
-  ![F1-Confidence Curve](file:///mnt/data/F1_curve.png)
+  <img src="https://github.com/andreaFaccenda00/DeepVisionAnalytics/assets/171338421/cd6f98dc-c242-4d07-90ee-3c10da2c9f4f" width="400" height="400">
 
 - **Training Metrics**:
-  ![Training Metrics](file:///mnt/data/results.png)
+- <img src="https://github.com/andreaFaccenda00/DeepVisionAnalytics/assets/171338421/f49bff86-40cf-47de-acb6-dd8d476824e9" width="400" height="400">
 
 These results illustrate the model's accuracy in detecting pedestrians, its confidence at various thresholds, and the improvements in training metrics over time.
 ## 🎬 video processing
