@@ -35,7 +35,7 @@ Supervision is a powerful library used to enhance computer vision and deep learn
 - **Real-time Wait Time Analysis**
 - **Edge Device Optimization**
 - **Deployment in Public Areas**
-## 💻 install
+## 💻 installation
 
 ####  1. Install the Supervision Package via Pip
 
@@ -88,7 +88,7 @@ Install the required dependencies listed in requirements.txt:
 pip install -r requirements.txt
 ```
 
-## 🛠 scripts
+## 🛠 Usage
 
 ### `draw_zones`
 
@@ -170,7 +170,7 @@ The trained YOLOv8 variants were tested on the SOMPT22 dataset in addition to th
 
 YOLOv8s was chosen for its balance of rapid inference (2.4ms), high precision (0.956), and significant recall (0.742), making it suitable for real-time surveillance and monitoring.
 
-#### Results
+## Results
 The following images demonstrate the performance and evaluation metrics of the YOLOv8s model trained on MOTSynth & Eurocity:
 
 - **Confusion Matrix**:
