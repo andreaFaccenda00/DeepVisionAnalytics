@@ -108,7 +108,7 @@ python scripts/draw_zones.py
 
 https://github.com/roboflow/supervision/assets/26109316/9d514c9e-2a61-418b-ae49-6ac1ad6ae5ac
 
-## models
+### YOLOv8 Training for People Flow Analysis
 
 #### YOLOv8 Training
 We trained YOLOv8 variants (YOLOv8n, YOLOv8s, YOLOv8m, YOLOv8l) on the MOTSynth and EuroCity Persons datasets. MOTSynth is a synthetic dataset generated using GTA V, while EuroCity Persons consists of urban images from various European cities.
@@ -157,13 +157,26 @@ The trained YOLOv8 variants were tested on the SOMPT22 dataset in addition to th
 |                   | YOLOv8s | 2.7ms     | 0.854  | 0.691     | 0.915     | 0.739  |
 |                   | YOLOv8m | 4.7ms     | 0.864  | 0.72      | 0.925     | 0.753  |
 |                   | YOLOv8l | 8.3ms     | 0.87   | 0.734     | 0.925     | 0.766  |
-| SOMPT22           | YOLOv8n | 2.3ms     | 0.721  | 0.591     | 0.891     | 0.667  |
+| Coco              | YOLOv8n | 2.3ms     | 0.721  | 0.591     | 0.891     | 0.667  |
 |                   | YOLOv8s | 2.6ms     | 0.745  | 0.612     | 0.902     | 0.684  |
 |                   | YOLOv8m | 4.0ms     | 0.762  | 0.635     | 0.911     | 0.698  |
 |                   | YOLOv8l | 6.5ms     | 0.781  | 0.652     | 0.918     | 0.712  |
 
 YOLOv8s was chosen for its balance of rapid inference (2.4ms), high precision (0.956), and significant recall (0.742), making it suitable for real-time surveillance and monitoring.
 
+#### Visual Results
+The following images demonstrate the performance and evaluation metrics of the YOLOv8s model:
+
+- **Confusion Matrix**:
+  ![Confusion Matrix](file:///mnt/data/confusion_matrix.png)
+
+- **F1-Confidence Curve**:
+  ![F1-Confidence Curve](file:///mnt/data/F1_curve.png)
+
+- **Training Metrics**:
+  ![Training Metrics](file:///mnt/data/results.png)
+
+These results illustrate the model's accuracy in detecting pedestrians, its confidence at various thresholds, and the improvements in training metrics over time.
 ## 🎬 video processing
 
 ### `main`
