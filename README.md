@@ -88,7 +88,7 @@ Install the required dependencies listed in requirements.txt:
 pip install -r requirements.txt
 ```
 
-## 🛠 Usage
+## 🛠 usage
 
 ### `draw_zones`
 
