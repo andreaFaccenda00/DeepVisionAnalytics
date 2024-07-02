@@ -174,7 +174,7 @@ The following images demonstrate the performance and evaluation metrics of the Y
 - <img src="https://github.com/andreaFaccenda00/DeepVisionAnalytics/assets/171338421/cd6f98dc-c242-4d07-90ee-3c10da2c9f4f" width="450" height="450">
 
 - **Training Metrics**:
-- <img src="https://github.com/andreaFaccenda00/DeepVisionAnalytics/assets/171338421/f49bff86-40cf-47de-acb6-dd8d476824e9" width="400" height="700">
+- <img src="https://github.com/andreaFaccenda00/DeepVisionAnalytics/assets/171338421/f49bff86-40cf-47de-acb6-dd8d476824e9" width="400" height="1400">
 
 These results illustrate the model's accuracy in detecting pedestrians, its confidence at various thresholds, and the improvements in training metrics over time.
 ## 🎬 video processing
