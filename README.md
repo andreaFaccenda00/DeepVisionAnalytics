@@ -195,7 +195,7 @@ Script to run object detection on a video file using the Ultralytics YOLOv8 mode
 #### Running the Code
 To run this code, ensure you have all the required libraries installed and the correct file paths set for your video, configuration, and model weights. Execute the script as follows:
 ```bash
-python main.py
+python ultralytics_static_video.py
 ```
 
 The script will process the video, detect and track objects, annotate zones of interest, and calculate the time spent in each zone. The output will be saved as an annotated video.
