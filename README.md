@@ -148,19 +148,19 @@ The trained YOLOv8 variants were tested on the SOMPT22 dataset in addition to th
 | MOTSynth          | YOLOv8n | 1.4ms     | 0.729  | 0.430     | 0.816     | 0.585  |
 |                   | YOLOv8s | 2.1ms     | 0.749  | 0.449     | 0.836     | 0.606  |
 |                   | YOLOv8m | 4.5ms     | 0.777  | 0.483     | 0.849     | 0.648  |
-|                   | YOLOv8l | 6.4ms     | 0.764  | 0.47      | 0.86      | 0.617  |
+|                   | YOLOv8l | 7.6ms     | 0.764  | 0.47      | 0.86      | 0.617  |
 | EuroCity Persons  | YOLOv8n | 1.7ms     | 0.602  | 0.401     | 0.721     | 0.287  |
-|                   | YOLOv8s | 3.2ms     | 0.629  | 0.439     | 0.846     | 0.298  |
-|                   | YOLOv8m | 6.6ms     | 0.633  | 0.415     | 0.844     | 0.388  |
-|                   | YOLOv8l | 10.4ms    | 0.621  | 0.425     | 0.900     | 0.328  |
-| MOTSynth EuroCity | YOLOv8n | 2.7ms     | 0.741  | 0.454     | 0.824     | 0.600  |
-|                   | YOLOv8s | 2.7ms     | 0.778  | 0.485     | 0.850     | 0.651  |
-|                   | YOLOv8m | 4.7ms     | 0.781  | 0.488     | 0.854     | 0.652  |
-|                   | YOLOv8l | 8.3ms     | 0.786  | 0.487     | 0.859     | 0.659  |
-| Coco              | YOLOv8n | 2.3ms     | 0.656  | 0.434     | 0.909     | 0.377  |
-|                   | YOLOv8s | 2.6ms     | 0.691  | 0.459     | 0.920     | 0.447  |
-|                   | YOLOv8m | 4.0ms     | 0.699  | 0.471     | 0.919     | 0.463  |
-|                   | YOLOv8l | 6.5ms     | 0.683  | 0.465     | 0.919     | 0.431  |
+|                   | YOLOv8s | 3.7ms     | 0.629  | 0.439     | 0.846     | 0.298  |
+|                   | YOLOv8m | 7.9ms     | 0.633  | 0.415     | 0.844     | 0.388  |
+|                   | YOLOv8l | 13.5ms    | 0.621  | 0.425     | 0.900     | 0.328  |
+| MOTSynth EuroCity | YOLOv8n | 1.2ms     | 0.741  | 0.454     | 0.824     | 0.600  |
+|                   | YOLOv8s | 2.2ms     | 0.778  | 0.485     | 0.850     | 0.651  |
+|                   | YOLOv8m | 4.6ms     | 0.781  | 0.488     | 0.854     | 0.652  |
+|                   | YOLOv8l | 7.6ms     | 0.786  | 0.487     | 0.859     | 0.659  |
+| Coco              | YOLOv8n | 1.2ms     | 0.656  | 0.434     | 0.909     | 0.377  |
+|                   | YOLOv8s | 2.2ms     | 0.691  | 0.459     | 0.920     | 0.447  |
+|                   | YOLOv8m | 4.6ms     | 0.699  | 0.471     | 0.919     | 0.463  |
+|                   | YOLOv8l | 7.9ms     | 0.683  | 0.465     | 0.919     | 0.431  |
 
 YOLOv8s was chosen for its balance of rapid inference (2.4ms), high precision (0.956), and significant recall (0.742), making it suitable for real-time surveillance and monitoring.
 
@@ -177,6 +177,7 @@ The following images demonstrate the performance and evaluation metrics of the Y
 - <img src="https://github.com/andreaFaccenda00/DeepVisionAnalytics/assets/171338421/f49bff86-40cf-47de-acb6-dd8d476824e9" width="1200" height="450">
 
 These results illustrate the model's accuracy in detecting pedestrians, its confidence at various thresholds, and the improvements in training metrics over time.
+
 ## 🎬 video processing
 
 ### `main`
