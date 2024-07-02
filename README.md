@@ -215,10 +215,8 @@ https://github.com/andreaFaccenda00/DeepVisionAnalytics/assets/171338421/d424407
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or features.
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-
-This revision organizes the content more effectively, provides clear instructions, and includes visual elements to improve readability and engagement. &#8203;:citation[oaicite:0]{index=0}&#8203;
 
 
 
