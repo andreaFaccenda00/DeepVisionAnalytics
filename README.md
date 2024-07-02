@@ -132,8 +132,6 @@ The script will process the video, detect and track objects, annotate zones of i
 
 #### video analysis
 
-![pedestrian_analytics (1)](https://github.com/andreaFaccenda00/DeepVisionAnalytics/assets/171338421/6c4722a1-fd52-4e4e-a3f7-78f0a5989253)
-
-
+(https://github.com/andreaFaccenda00/DeepVisionAnalytics/assets/171338421/d424407b-2e08-4e76-8126-5c64b2b2fa58)
 
 
