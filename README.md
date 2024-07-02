@@ -168,7 +168,7 @@ YOLOv8s was chosen for its balance of rapid inference (2.4ms), high precision (0
 The following images demonstrate the performance and evaluation metrics of the YOLOv8s model:
 
 - **Confusion Matrix**:
-  ![Confusion Matrix](file:///mnt/data/confusion_matrix.png)
+  ![confusion_matrix](https://github.com/andreaFaccenda00/DeepVisionAnalytics/assets/171338421/5918e13d-4d1f-4c21-bb85-dd2a99a889f0)
 
 - **F1-Confidence Curve**:
   ![F1-Confidence Curve](file:///mnt/data/F1_curve.png)
