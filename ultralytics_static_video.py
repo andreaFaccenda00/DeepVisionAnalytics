@@ -16,6 +16,11 @@ LABEL_ANNOTATOR = sv.LabelAnnotator(
 )
 
 
+WIDTH, HEIGTH = 1280, 720
+output_filename = 'pedestrian_analysis.mp4'
+fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+out = cv2.VideoWriter(output_filename, fourcc, 30.0, (WIDTH, HEIGTH))
+
 def main(
     source_video_path: str,
     zone_configuration_path: str,
@@ -41,7 +46,7 @@ def main(
     timers = [FPSBasedTimer(video_info.fps) for _ in zones]
 
     for frame in frames_generator:
-        results = model(frame, verbose=False, device=device, conf=confidence)[0]
+        results = model(frame, verbose=False, device=device, conf=confidence, half = True)[0]
         detections = sv.Detections.from_ultralytics(results)
         detections = detections[find_in_list(detections.class_id, classes)]
         detections = detections.with_nms(threshold=iou)
@@ -64,8 +69,10 @@ def main(
                 custom_color_lookup=custom_color_lookup,
             )
             labels = [
-                f"#{tracker_id} {int(time // 60):02d}:{int(time % 60):02d}"
+                #f"#{tracker_id} {int(time // 60):02d}:{int(time % 60):02d}"
+                f"{int(time // 60):02d}:{int(time % 60):02d}"
                 for tracker_id, time in zip(detections_in_zone.tracker_id, time_in_zone)
+                
             ]
             annotated_frame = LABEL_ANNOTATOR.annotate(
                 scene=annotated_frame,
@@ -74,7 +81,8 @@ def main(
                 custom_color_lookup=custom_color_lookup,
             )
 
-        cv2.imshow("Processed Video", annotated_frame)
+        #cv2.imshow("Processed Video", annotated_frame)
+        out.write(annotated_frame)
         if cv2.waitKey(1) & 0xFF == ord("q"):
             break
     cv2.destroyAllWindows()
@@ -93,13 +101,13 @@ if __name__ == "__main__":
     parser.add_argument(
         "--source_video_path",
         type=str,
-        default="data\people.mp4",
+        default="data/video_piazza.mp4",
         help="Path to the source video file.",
     )
     parser.add_argument(
         "--weights",
         type=str,
-        default="models\yolov8sSGD.pt",
+        default="models/yolov8s_pedestrian.pt",
         help="Path to the model weights file. Default is 'yolov8s.pt'.",
     )
     parser.add_argument(
