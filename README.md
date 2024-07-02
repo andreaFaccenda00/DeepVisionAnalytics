@@ -1,34 +1,40 @@
 # DeepVisionAnalytics
-## Introduction 
-The Computer Vision and Deep Learning project "Wait Time Optimization and Analysis of Interactions in Public Areas," part of the CTE SQUARE Pesaro, tackles these challenges using advanced computer vision (CV) and Deep Learning (DL) techniques. The goal is to monitor and analyze the flow of people to reduce waiting times and better understand people's behaviors and attention. The project focuses on three main aspects: wait time analysis, optimization of DL models for edge devices, and practical implementation. By installing webcams in Piazza del Popolo in Pesaro and employing YOLOv8 (You Only Look Once) neural networks, the project aims to monitor the time people spend in specific areas to identify critical points and optimize the efficiency of public spaces.
+
+## Introduction
+The "Wait Time Optimization and Analysis of Interactions in Public Areas" project, part of the CTE SQUARE Pesaro, aims to monitor and analyze the flow of people using advanced Computer Vision (CV) and Deep Learning (DL) techniques. By installing webcams in Piazza del Popolo in Pesaro and employing YOLOv8 (You Only Look Once) neural networks, the project seeks to reduce waiting times and better understand people’s behaviors and attention in public spaces.
+
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Supervision](#supervision)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Results](#results)
+- [Video Processing](#video-processing)
+- [Contributions](#contributions)
+- [License](#license)
 
 ## Project Overview
-
 This project focuses on three main objectives:
 1. **Wait Time Analysis**: Monitoring the duration people spend in specific areas to identify bottlenecks.
 2. **Model Optimization**: Enhancing DL models for deployment on edge devices.
 3. **Practical Implementation**: Installing webcams and deploying models in real-world scenarios.
 
 ## Supervision
-
 <div align="center">
   <p>
-    <a align="center" href="" target="https://supervision.roboflow.com">
-      <img
-        width="100%"
-        src="https://media.roboflow.com/open-source/supervision/rf-supervision-banner.png?updatedAt=1678995927529"
-      >
+    <a align="center" href="https://supervision.roboflow.com" target="_blank">
+      <img width="100%" src="https://media.roboflow.com/open-source/supervision/rf-supervision-banner.png?updatedAt=1678995927529" alt="Supervision Library">
     </a>
   </p>
-
-  <br>
-
-
-  <br>
 </div>
 
+Supervision is a powerful library used to enhance computer vision and deep learning applications. It simplifies the process of training, evaluating, and deploying DL models. Its features include data augmentation, model evaluation metrics, and support for various neural network architectures.
 
-Supervision is a powerful library used in the "Wait Time Optimization and Analysis of Interactions in Public Areas" project to enhance the capabilities of computer vision and deep learning applications. This library provides a set of tools and utilities designed to simplify the process of training, evaluating, and deploying deep learning models. Its features include data augmentation, model evaluation metrics, and support for various neural network architectures, making it a versatile choice for developing advanced computer vision solutions.
+## Features
+- **Real-time Wait Time Analysis**
+- **Edge Device Optimization**
+- **Deployment in Public Areas**
 ## 💻 install
 
 ####  1. Install the Supervision Package via Pip
@@ -164,7 +170,7 @@ The trained YOLOv8 variants were tested on the SOMPT22 dataset in addition to th
 
 YOLOv8s was chosen for its balance of rapid inference (2.4ms), high precision (0.956), and significant recall (0.742), making it suitable for real-time surveillance and monitoring.
 
-#### Visual Results
+#### Results
 The following images demonstrate the performance and evaluation metrics of the YOLOv8s model trained on MOTSynth & Eurocity:
 
 - **Confusion Matrix**:
@@ -180,7 +186,7 @@ These results illustrate the model's accuracy in detecting pedestrians, its conf
 
 ## 🎬 video processing
 
-### `main`
+### `ultralytics_static_video.py`
 
 Script to run object detection on a video file using the Ultralytics YOLOv8 model.Key parameters include:
 
@@ -195,7 +201,8 @@ Script to run object detection on a video file using the Ultralytics YOLOv8 mode
 #### Running the Code
 To run this code, ensure you have all the required libraries installed and the correct file paths set for your video, configuration, and model weights. Execute the script as follows:
 ```bash
-python ultralytics_static_video.py
+python ultralytics_static_video.py --zone_configuration_path data/people.mp4 --source_video_path data/config.json --weights 'yolov8s_pedestrian.pt' --device 'cuda' --classes 0 --confidence_threshold 0.3 --iou_threshold 0.7
+
 ```
 
 The script will process the video, detect and track objects, annotate zones of interest, and calculate the time spent in each zone. The output will be saved as an annotated video.
@@ -203,5 +210,16 @@ The script will process the video, detect and track objects, annotate zones of i
 #### video analysis
 
 https://github.com/andreaFaccenda00/DeepVisionAnalytics/assets/171338421/d424407b-2e08-4e76-8126-5c64b2b2fa58
+
+## Contributions
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or features.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+
+This revision organizes the content more effectively, provides clear instructions, and includes visual elements to improve readability and engagement. &#8203;:citation[oaicite:0]{index=0}&#8203;
+
+
 
 
