@@ -108,6 +108,62 @@ python scripts/draw_zones.py
 
 https://github.com/roboflow/supervision/assets/26109316/9d514c9e-2a61-418b-ae49-6ac1ad6ae5ac
 
+## models
+
+#### YOLOv8 Training
+We trained YOLOv8 variants (YOLOv8n, YOLOv8s, YOLOv8m, YOLOv8l) on the MOTSynth and EuroCity Persons datasets. MOTSynth is a synthetic dataset generated using GTA V, while EuroCity Persons consists of urban images from various European cities.
+
+- **Datasets**: 
+  - **MOTSynth**: Large-scale synthetic dataset for pedestrian detection, segmentation, and tracking.
+  - **EuroCity Persons**: Urban images from multiple European cities for realistic pedestrian detection.
+
+- **Training Split**: 80% for training, 10% for validation, 10% for testing.
+- **Image Size**: 640x640 pixels.
+
+#### Hyperparameters for All YOLOv8 Variants
+| Hyperparameter       | YOLOv8n  | YOLOv8s  | YOLOv8m  | YOLOv8l  |
+|----------------------|----------|----------|----------|----------|
+| Batch size           | 16       | 16       | 16       | 16       |
+| Image size           | 640x640  | 640x640  | 640x640  | 640x640  |
+| Epochs               | 250      | 250      | 250      | 250      |
+| Early stopping       | 30       | 30       | 30       | 30       |
+| Optimizer            | SGD      | SGD      | SGD      | SGD      |
+| Initial learning rate| 0.01     | 0.01     | 0.01     | 0.01     |
+| LR reduction factor  | 0.01     | 0.01     | 0.01     | 0.01     |
+| Momentum             | 0.95     | 0.95     | 0.95     | 0.95     |
+| Weight decay         | 0.0001   | 0.0001   | 0.0001   | 0.0001   |
+| IOU threshold        | 0.7      | 0.7      | 0.7      | 0.7      |
+| Detection limit      | 300      | 300      | 300      | 300      |
+| Mixed precision      | Yes      | Yes      | Yes      | Yes      |
+| Warmup epochs        | 10       | 10       | 10       | 10       |
+| Warmup momentum      | 0.5      | 0.5      | 0.5      | 0.5      |
+| Warmup LR            | 0.1      | 0.1      | 0.1      | 0.1      |
+| Masking ratio        | 4        | 4        | 4        | 4        |
+
+#### Testing and Evaluation
+The trained YOLOv8 variants were tested on the SOMPT22 dataset in addition to the MOTSynth and EuroCity Persons datasets. SOMPT22 was used exclusively for testing to provide a rigorous evaluation of the model's capability in urban surveillance scenarios.
+
+| Dataset           | Model   | Inference | mAP@50 | mAP@50-95 | Precision | Recall |
+|-------------------|---------|-----------|--------|-----------|-----------|--------|
+| MOTSynth          | YOLOv8n | 2.1ms     | 0.841  | 0.659     | 0.943     | 0.705  |
+|                   | YOLOv8s | 2.4ms     | 0.863  | 0.708     | 0.956     | 0.742  |
+|                   | YOLOv8m | 3.9ms     | 0.873  | 0.733     | 0.964     | 0.757  |
+|                   | YOLOv8l | 6.4ms     | 0.879  | 0.75      | 0.97      | 0.768  |
+| EuroCity Persons  | YOLOv8n | 2.4ms     | 0.702  | 0.479     | 0.721     | 0.628  |
+|                   | YOLOv8s | 3.2ms     | 0.741  | 0.521     | 0.766     | 0.664  |
+|                   | YOLOv8m | 6.6ms     | 0.781  | 0.583     | 0.768     | 0.714  |
+|                   | YOLOv8l | 10.4ms    | 0.833  | 0.651     | 0.786     | 0.795  |
+| MOTSynth EuroCity | YOLOv8n | 2.7ms     | 0.854  | 0.691     | 0.915     | 0.739  |
+|                   | YOLOv8s | 2.7ms     | 0.854  | 0.691     | 0.915     | 0.739  |
+|                   | YOLOv8m | 4.7ms     | 0.864  | 0.72      | 0.925     | 0.753  |
+|                   | YOLOv8l | 8.3ms     | 0.87   | 0.734     | 0.925     | 0.766  |
+| SOMPT22           | YOLOv8n | 2.3ms     | 0.721  | 0.591     | 0.891     | 0.667  |
+|                   | YOLOv8s | 2.6ms     | 0.745  | 0.612     | 0.902     | 0.684  |
+|                   | YOLOv8m | 4.0ms     | 0.762  | 0.635     | 0.911     | 0.698  |
+|                   | YOLOv8l | 6.5ms     | 0.781  | 0.652     | 0.918     | 0.712  |
+
+YOLOv8s was chosen for its balance of rapid inference (2.4ms), high precision (0.956), and significant recall (0.742), making it suitable for real-time surveillance and monitoring.
+
 ## 🎬 video processing
 
 ### `main`
