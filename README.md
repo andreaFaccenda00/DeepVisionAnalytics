@@ -145,27 +145,27 @@ The trained YOLOv8 variants were tested on the SOMPT22 dataset in addition to th
 
 | Dataset           | Model   | Inference | mAP@50 | mAP@50-95 | Precision | Recall |
 |-------------------|---------|-----------|--------|-----------|-----------|--------|
-| MOTSynth          | YOLOv8n | 2.1ms     | 0.841  | 0.659     | 0.943     | 0.705  |
-|                   | YOLOv8s | 2.4ms     | 0.863  | 0.708     | 0.956     | 0.742  |
-|                   | YOLOv8m | 3.9ms     | 0.873  | 0.733     | 0.964     | 0.757  |
-|                   | YOLOv8l | 6.4ms     | 0.879  | 0.75      | 0.97      | 0.768  |
-| EuroCity Persons  | YOLOv8n | 2.4ms     | 0.702  | 0.479     | 0.721     | 0.628  |
-|                   | YOLOv8s | 3.2ms     | 0.741  | 0.521     | 0.766     | 0.664  |
-|                   | YOLOv8m | 6.6ms     | 0.781  | 0.583     | 0.768     | 0.714  |
-|                   | YOLOv8l | 10.4ms    | 0.833  | 0.651     | 0.786     | 0.795  |
-| MOTSynth EuroCity | YOLOv8n | 2.7ms     | 0.854  | 0.691     | 0.915     | 0.739  |
-|                   | YOLOv8s | 2.7ms     | 0.854  | 0.691     | 0.915     | 0.739  |
-|                   | YOLOv8m | 4.7ms     | 0.864  | 0.72      | 0.925     | 0.753  |
-|                   | YOLOv8l | 8.3ms     | 0.87   | 0.734     | 0.925     | 0.766  |
-| Coco              | YOLOv8n | 2.3ms     | 0.721  | 0.591     | 0.891     | 0.667  |
-|                   | YOLOv8s | 2.6ms     | 0.745  | 0.612     | 0.902     | 0.684  |
-|                   | YOLOv8m | 4.0ms     | 0.762  | 0.635     | 0.911     | 0.698  |
-|                   | YOLOv8l | 6.5ms     | 0.781  | 0.652     | 0.918     | 0.712  |
+| MOTSynth          | YOLOv8n | 1.4ms     | 0.729  | 0.430     | 0.816     | 0.585  |
+|                   | YOLOv8s | 2.1ms     | 0.749  | 0.449     | 0.836     | 0.606  |
+|                   | YOLOv8m | 4.5ms     | 0.777  | 0.483     | 0.849     | 0.648  |
+|                   | YOLOv8l | 6.4ms     | 0.764  | 0.47      | 0.86      | 0.617  |
+| EuroCity Persons  | YOLOv8n | 1.7ms     | 0.602  | 0.401     | 0.721     | 0.287  |
+|                   | YOLOv8s | 3.2ms     | 0.629  | 0.439     | 0.846     | 0.298  |
+|                   | YOLOv8m | 6.6ms     | 0.633  | 0.415     | 0.844     | 0.388  |
+|                   | YOLOv8l | 10.4ms    | 0.621  | 0.425     | 0.900     | 0.328  |
+| MOTSynth EuroCity | YOLOv8n | 2.7ms     | 0.741  | 0.454     | 0.824     | 0.600  |
+|                   | YOLOv8s | 2.7ms     | 0.778  | 0.485     | 0.850     | 0.651  |
+|                   | YOLOv8m | 4.7ms     | 0.781  | 0.488     | 0.854     | 0.652  |
+|                   | YOLOv8l | 8.3ms     | 0.786  | 0.487     | 0.859     | 0.659  |
+| Coco              | YOLOv8n | 2.3ms     | 0.656  | 0.434     | 0.909     | 0.377  |
+|                   | YOLOv8s | 2.6ms     | 0.691  | 0.459     | 0.920     | 0.447  |
+|                   | YOLOv8m | 4.0ms     | 0.699  | 0.471     | 0.919     | 0.463  |
+|                   | YOLOv8l | 6.5ms     | 0.683  | 0.465     | 0.919     | 0.431  |
 
 YOLOv8s was chosen for its balance of rapid inference (2.4ms), high precision (0.956), and significant recall (0.742), making it suitable for real-time surveillance and monitoring.
 
 #### Visual Results
-The following images demonstrate the performance and evaluation metrics of the YOLOv8s model:
+The following images demonstrate the performance and evaluation metrics of the YOLOv8s model trained on MOTSynth & Eurocity:
 
 - **Confusion Matrix**:
 -  <img src="https://github.com/andreaFaccenda00/DeepVisionAnalytics/assets/171338421/5918e13d-4d1f-4c21-bb85-dd2a99a889f0" width="450" height="450">
