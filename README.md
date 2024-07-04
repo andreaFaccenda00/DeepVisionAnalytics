@@ -209,7 +209,10 @@ The script will process the video, detect and track objects, annotate zones of i
 
 #### video analysis
 
-https://github.com/andreaFaccenda00/DeepVisionAnalytics/assets/171338421/d424407b-2e08-4e76-8126-5c64b2b2fa58
+
+https://github.com/andreaFaccenda00/DeepVisionAnalytics/assets/171338421/e3c6f94c-3f90-44e5-8dc3-6f77dd6e25a4
+
+
 
 ## Contributions
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or features.
