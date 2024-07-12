@@ -163,10 +163,10 @@ The trained YOLOv8 variants were tested on the SOMPT22 dataset in addition to th
 |                   | YOLOv8s | 2.2ms     | 0.778  | 0.485     | 0.850     | 0.651  |
 |                   | YOLOv8m | 4.6ms     | 0.781  | 0.488     | 0.854     | 0.652  |
 |                   | YOLOv8l | 7.6ms     | 0.786  | 0.487     | 0.859     | 0.659  |
-| Coco              | YOLOv8n | 1.2ms     | 0.656  | 0.434     | 0.909     | 0.377  |
-|                   | YOLOv8s | 2.2ms     | 0.691  | 0.459     | 0.920     | 0.447  |
-|                   | YOLOv8m | 4.6ms     | 0.699  | 0.471     | 0.919     | 0.463  |
-|                   | YOLOv8l | 7.9ms     | 0.683  | 0.465     | 0.919     | 0.431  |
+| Coco              | YOLOv8n | 1.2ms     | 0.626  | 0.434     | 0.799     | 0.377  |
+|                   | YOLOv8s | 2.2ms     | 0.641  | 0.459     | 0.810     | 0.447  |
+|                   | YOLOv8m | 4.6ms     | 0.649  | 0.471     | 0.809     | 0.463  |
+|                   | YOLOv8l | 7.9ms     | 0.643  | 0.465     | 0.809     | 0.431  |
 
 YOLOv8s was chosen for its balance of rapid inference (2.4ms), high precision (0.956), and significant recall (0.742), making it suitable for real-time surveillance and monitoring.
 
