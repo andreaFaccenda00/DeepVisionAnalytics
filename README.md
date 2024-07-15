@@ -171,7 +171,7 @@ The trained YOLOv8 variants were tested on the SOMPT22 dataset in addition to th
 
 YOLOv8s was chosen for its balance of rapid inference (2.4ms), high precision (0.956), and significant recall (0.742), making it suitable for real-time surveillance and monitoring.
 
-All trained models can be accessed via this [OneDrive link](https://onedrive.live.com/?cid=YOUR_LINK_HERE).
+All trained models can be accessed via this [OneDrive link](https://onedrive.live.com/?cid=[https://univpm-my.sharepoint.com/:f:/g/personal/s1119359_studenti_univpm_it/EsUTP-Jwi65GlAL8wUo6WzIBGzOsCs2ITQL4bhMY-cACqg?e=iM0VQh])).
 
 ## Results
 The following images demonstrate the performance and evaluation metrics of the YOLOv8s model trained on MOTSynth & Eurocity:
