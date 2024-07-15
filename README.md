@@ -11,7 +11,7 @@ The "Wait Time Optimization and Analysis of Interactions in Public Areas" projec
 - [Usage](#usage)
 - [Results](#results)
 - [Architecture modify](#architecture-modifications)
-- [Video Processing](# 🎬video-processing)
+- [Video Processing](#video-processing)
 - [Contributions](#contributions)
 - [License](#license)
 
