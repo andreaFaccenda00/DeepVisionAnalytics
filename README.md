@@ -207,7 +207,7 @@ In the "Dwell Time Analysis for People Flow" project, the YOLOv8 neural network 
    The modified structure was optimized to detect small objects, the main focus of this use case.
 
 - **Yolov8s Architecture modify**:
-- <img src="Screenshot 2024-07-10 232515](https://github.com/user-attachments/assets/885730bf-7f9f-498d-b92f-53d9966f591e" width="1200" height="450">
+- <img src="https://github.com/user-attachments/assets/885730bf-7f9f-498d-b92f-53d9966f591e" width="1200" height="450">
 
 
 ### Evaluation Metrics for YOLOv8s (Small Object)
