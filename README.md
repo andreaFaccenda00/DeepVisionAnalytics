@@ -11,7 +11,7 @@ The "Wait Time Optimization and Analysis of Interactions in Public Areas" projec
 - [Usage](#usage)
 - [Results](#results)
 - [Architecture modify](#architecture-modifications)
-- [Video Processing](#video-processing)
+- [Video Processing](# 🎬video-processing)
 - [Contributions](#contributions)
 - [License](#license)
 
@@ -250,7 +250,7 @@ The script will process the video, detect and track objects, annotate zones of i
 
 https://github.com/andreaFaccenda00/DeepVisionAnalytics/assets/171338421/e3c6f94c-3f90-44e5-8dc3-6f77dd6e25a4
 
-### 'ultralytics_stream_example.py '
+### `ultralytics_stream_example.py`
 Script to run object detection on a video stream using the Roboflow Inference model.
 
   - `--zone_configuration_path`: Path to the zone configuration JSON file.
