@@ -250,8 +250,15 @@ The script will process the video, detect and track objects, annotate zones of i
 
 https://github.com/andreaFaccenda00/DeepVisionAnalytics/assets/171338421/e3c6f94c-3f90-44e5-8dc3-6f77dd6e25a4
 
+###ultralytics_stram.py
+Script to run object detection on a video stream using the Roboflow Inference model.
 
-
+--zone_configuration_path: Path to the zone configuration JSON file.
+--rtsp_url: Complete RTSP URL for the video stream.
+--model_id: Roboflow model ID.
+--classes: List of class IDs to track. If empty, all classes are tracked.
+--confidence_threshold: Confidence level for detections (0 to 1). Default is 0.3.
+--iou_threshold: IOU threshold for non-max suppression. Default is 0.7.
 ## Contributions
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or features.
 
