@@ -184,6 +184,41 @@ The following images demonstrate the performance and evaluation metrics of the Y
 
 These results illustrate the model's accuracy in detecting pedestrians, its confidence at various thresholds, and the improvements in training metrics over time.
 
+## Architecture Modifications
+
+In the "Dwell Time Analysis for People Flow" project, the YOLOv8 neural network architecture was modified for improved small object detection and computational efficiency:
+
+1. **Parameter Reduction**:
+   The network was reduced from 11 million to 2.2 million parameters, enhancing computational efficiency and image processing speed.
+
+2. **Depth Reduction**:
+   The network depth was limited to 90 layers, optimizing execution speed while maintaining small object detection capability.
+
+3. **Layer Removal**:
+   Layers responsible for medium and large object detection were removed, reducing model complexity and parameters.
+
+4. **Gradient Flow Optimization**:
+   Unnecessary connections were reduced to improve gradient flow efficiency, making the model lighter and faster.
+
+5. **Small Object Focus**:
+   The modified structure was optimized to detect small objects, the main focus of this use case.
+
+- **Yolov8s Architecture modify**:
+- <img src="https://github.com/andreaFaccenda00/DeepVisionAnalytics/assets/171338421/f49bff86-40cf-47de-acb6-dd8d476824e9" width="1200" height="450">
+
+
+### Evaluation Metrics for YOLOv8s (Small Object)
+
+The performance of the modified YOLOv8s network, optimized for small object detection, was evaluated with the following metrics:
+
+- **Box Precision (P)**: 0.826
+- **Recall (R)**: 0.641
+- **mAP@50**: 0.766
+- **mAP@50-95**: 0.47
+
+These modifications resulted in significant inference speed improvements, from 30 fps to 45 fps, with a reduction in parameters from 11.2 million to 2.2 million, making the model optimal for real-time applications. Despite a slight decrease in performance metrics, the speed improvement was a crucial priority.
+
+
 ## 🎬 video processing
 
 ### `ultralytics_static_video.py`
